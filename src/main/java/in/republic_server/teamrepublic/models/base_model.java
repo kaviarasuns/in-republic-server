@@ -9,7 +9,7 @@ import org.hibernate.annotations.GenericGenerator;
 import java.util.UUID;
 
 @MappedSuperclass
-public class BaseModel {
+public class base_model {
 
     @Id
     @GeneratedValue(generator = "kavi")

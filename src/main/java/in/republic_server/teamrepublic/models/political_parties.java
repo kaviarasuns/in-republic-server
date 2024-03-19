@@ -11,7 +11,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class political_parties extends BaseModel {
+public class political_parties extends base_model {
     private String party_type;
     private String abbreviation;
     private String party_name;
