@@ -18,9 +18,9 @@ public class PoliticalParties extends BaseModel {
     @Column
     private String party_type;
 
-    @Column
+    @Column(unique = true)
     private String abbreviation;
 
-    @Column
+    @Column(unique = true)
     private String party_name;
 }

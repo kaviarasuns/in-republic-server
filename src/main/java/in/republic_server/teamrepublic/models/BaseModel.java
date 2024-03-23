@@ -11,7 +11,7 @@ import java.util.UUID;
 public class BaseModel {
     @Id
     @GeneratedValue(generator = "uuid2")
-    @GenericGenerator(name = "uuid2", strategy = "uuid2")
-    @Column(name = "id", columnDefinition = "VARCHAR(36)", nullable = false, updatable = false)
+    @GenericGenerator(name = "uuid2", strategy = "org.hibernate.id.UUIDGenerator")
+    @Column(name = "id", columnDefinition = "binary(16)", nullable = false, updatable = false)
     private UUID uuid;
 }
