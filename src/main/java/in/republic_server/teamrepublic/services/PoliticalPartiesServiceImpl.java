@@ -42,6 +42,7 @@ public class PoliticalPartiesServiceImpl implements PoliticalPartiesService {
         return parties.stream()
                 .map(party -> {
                     PoliticalPartiesDto partyDto = new PoliticalPartiesDto();
+                    partyDto.setId(party.getId());
                     partyDto.setParty_type(party.getParty_type());
                     partyDto.setAbbreviation(party.getAbbreviation());
                     partyDto.setParty_name(party.getParty_name());

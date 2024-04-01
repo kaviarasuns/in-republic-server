@@ -5,9 +5,9 @@ import lombok.Setter;
 
 @Setter
 @Getter
-public class PoliticalPartiesDto {
+public class CandidatesDto {
     private String id;
-    private String party_type;
-    private String abbreviation;
-    private String party_name;
+    private String candidate_name;
+    private String sex;
+    private String age;
 }
