@@ -1,12 +1,14 @@
-package in.republic_server.teamrepublic.models;
+package in.teamRepublic.teamRepublic.PoliticalParties;
 
-import jakarta.persistence.*;
+
+import in.teamRepublic.teamRepublic.common.BaseModel;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import java.util.List;
 
 @Entity
 @Table(name="political_parties")
@@ -23,7 +25,4 @@ public class PoliticalParties extends BaseModel {
 
     @Column(unique = true)
     private String party_name;
-
-    @OneToMany(mappedBy = "political_parties")
-    private List<StateElectionResults> state_election_results;
 }

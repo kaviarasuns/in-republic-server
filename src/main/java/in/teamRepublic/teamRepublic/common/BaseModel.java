@@ -1,14 +1,10 @@
-package in.republic_server.teamrepublic.models;
+package in.teamRepublic.teamRepublic.common;
 
-
-import jakarta.persistence.*;
+import jakarta.persistence.Id;
+import jakarta.persistence.MappedSuperclass;
 import lombok.Getter;
 import lombok.Setter;
-import org.hibernate.annotations.GenericGenerator;
-import org.hibernate.annotations.Type;
 import org.hibernate.annotations.UuidGenerator;
-
-import java.util.UUID;
 
 @Getter
 @Setter

@@ -1,10 +1,10 @@
-package in.republic_server.teamrepublic;
+package in.teamRepublic.teamRepublic;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class InRepublicServerApplicationTests {
+class TeamRepublicApplicationTests {
 
 	@Test
 	void contextLoads() {
